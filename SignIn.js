@@ -27,7 +27,7 @@ const SignIn=({navigation})=>{
 
     return(
         <View style={styles.container}>
-            <TouchableOpacity style={styles.backButton}>
+            <TouchableOpacity style={styles.backButton} onPress={()=>navigation.goBack()}>
                 <Icon name='chevron-back-outline' size={24} color='black'/>
             </TouchableOpacity>
             <View style={styles.header}>
